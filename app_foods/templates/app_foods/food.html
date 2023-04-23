@@ -1,0 +1,11 @@
+{% extends 'app_general/components/base.html' %}
+
+{% block site_title %}{{ food.title }}{% endblock %}
+
+{% block content %}
+<div>
+    <h3>{{ food.title }}</h3>
+    <p>{{ food.price }}</p>
+    <p>{{ food.date|date:'j N Y' }}</p>
+</div>
+{% endblock %}
